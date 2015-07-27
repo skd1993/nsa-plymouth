@@ -6,7 +6,7 @@ if ( Plymouth.GetMode () == "boot" )
     Window.SetBackgroundBottomColor (0, 0, 0);
 
 /* set the logo image and make its sprite */
-    logo.image = Image("nsa-logo.png");
+    logo.image = Image("images/nsa-logo.png");
     logo.sprite = Sprite(logo.image);
 
 /*set the sprite position to center of the screen */
@@ -20,7 +20,7 @@ if ( Plymouth.GetMode () == "boot" )
     progress = 0;
 
 /* gets the correct image of progress bar to give effect of throbbing */
-    progress_box.image = Image("throbber-0" + progress + ".png");
+    progress_box.image = Image("images/throbber-0" + progress + ".png");
     progress_box.sprite = Sprite();
     progress_box.x = Window.GetWidth() / 2 - progress_box.image.GetWidth()  / 2;
     progress_box.y = Window.GetHeight() * 0.75 - progress_box.image.GetHeight() / 2;
@@ -33,7 +33,7 @@ else
     Window.SetBackgroundTopColor (0, 0, 0);
     Window.SetBackgroundBottomColor (0, 0, 0);
 
-    logo.image = Image("nsa-logo-alt.png");
+    logo.image = Image("images/nsa-logo-alt.png");
     logo.sprite = Sprite(logo.image);
     logo.opacity_angle = 0;
   }
@@ -50,7 +50,7 @@ fun refresh ()
         if (progress >= 10)
           progress = 0;
 
-        new_progress_box.image = Image("throbber-0" + progress + ".png");
+        new_progress_box.image = Image("images/throbber-0" + progress + ".png");
         progress_box.sprite.SetImage(new_progress_box.image);
         progress_box.sprite.SetOpacity(1);
       }
@@ -92,9 +92,9 @@ fun dialog_setup()
     local.lock;
     local.entry;
     
-    box.image = Image("box.png");
-    lock.image = Image("lock.png");
-    entry.image = Image("entry.png");
+    box.image = Image("images/box.png");
+    lock.image = Image("images/lock.png");
+    entry.image = Image("images/entry.png");
     
     box.sprite = Sprite(box.image);
     box.x = Window.GetWidth()  / 2 - box.image.GetWidth ()/2;
@@ -117,7 +117,7 @@ fun dialog_setup()
     global.dialog.box = box;
     global.dialog.lock = lock;
     global.dialog.entry = entry;
-    global.dialog.bullet_image = Image("bullet.png");
+    global.dialog.bullet_image = Image("images/bullet.png");
     dialog_opacity (1);
   }
     
