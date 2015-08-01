@@ -1,6 +1,41 @@
+/* utility functions for calculating window's max height and width */
+Window.GetMaxWidth = fun(){
+	x=0;
+	width=0;
+	while(Window.GetWidth(x))
+	{
+		width = Mat.max(width, Window.GetWidth(x));
+		x++;
+	}
+	return width;
+};
+
+Window.GetMaxHeight = fun(){
+	y=0;
+	height=0;
+	while(Window.GetHeight(y))
+	{
+		height = Mat.max(height, Window.GetHeight(x));
+		y++;
+	}
+	return height;
+}; 
+
 /* For startup we want a light theme with a throbber */
 if ( Plymouth.GetMode () == "boot" )
   {
+
+/* set the background image */
+/* currently works for background image size 1366x768 */
+    //background.original_image = Image("images/NSA_splash.png");
+	background.image = Image("images/black-world-map.png");
+
+/* set the bg sprite position */
+	//background.image = background.original_image.Scale(Window.GetMaxWidth(), Window.GetMaxHeight());
+	background.sprite = SpriteNew();
+	background.sprite.SetImage(background.image);
+	background.sprite.SetPosition(Window.GetX(), Window.GetY(), -100);
+
 /* black background */
     Window.SetBackgroundTopColor (0, 0, 0);
     Window.SetBackgroundBottomColor (0, 0, 0);

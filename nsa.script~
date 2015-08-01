@@ -5,8 +5,16 @@ if ( Plymouth.GetMode () == "boot" )
     Window.SetBackgroundTopColor (0, 0, 0);
     Window.SetBackgroundBottomColor (0, 0, 0);
 
+/* set the background image */
+    background.original_image = Image("images/black-world-map.png");
+
+/* set the bg sprite position */
+	background.image = background.original_image.Scale(Window.GetMaxWidth(), Window.GetMaxHeight());
+	background.sprite = Sprite(background.image);
+	background.sprite.SetPosition(Window.GetX(), Window.GetY(), -10);
+
 /* set the logo image and make its sprite */
-    logo.image = Image("images/nsa-logo.png");
+    logo.image = ImageNew("images/nsa-logo.png");
     logo.sprite = Sprite(logo.image);
 
 /*set the sprite position to center of the screen */
