@@ -6,4 +6,4 @@ A cool NSA-style plymouth bootsplash for Ubuntu.
 ![](http://imgur.com/pyqrmvO.png)
 
 ####animated preview
-![animated preview nsa-plymouth](http://gph.is/1IzkUZI)
+[animated preview nsa-plymouth](http://gph.is/1IzkUZI)
