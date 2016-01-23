@@ -1,3 +1,4 @@
+#!/bin/bash
 # a simple list commmands to set the nsa-plymouth as the default boot splash screen theme
 # change "nsa-plymouth" to any other custom theme you wish to install
 # INSTALLATION INSTRUCTIONS:
