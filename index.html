@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Nsa-plymouth by skd1993</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Nsa-plymouth</h1>
+        <h2>A cool NSA-style plymouth bootsplash for Ubuntu.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/skd1993/nsa-plymouth/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/skd1993/nsa-plymouth/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/skd1993/nsa-plymouth" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h2>
+<a id="nsa-plymouth" class="anchor" href="#nsa-plymouth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>nsa-plymouth</h2>
+
+<p>A cool NSA-style plymouth bootsplash for Ubuntu.</p>
+
+<h2>
+<a id="installation-instructions" class="anchor" href="#installation-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation Instructions</h2>
+
+<p>The theme can be easily installed by running the <strong>install.sh</strong> file.
+Alternatively it can be done manually too by using the following commands.</p>
+
+<h4>
+<a id="manual-installation" class="anchor" href="#manual-installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manual installation</h4>
+
+<ul>
+<li><p>make a directory in plymouth directory as stated below where the theme will be stored
+<code>mkdir /lib/plymouth/themes/my-theme</code></p></li>
+<li><p>copy the directory holding the theme files to the new place
+<code>cp --recursive /path/to/my-theme /lib/plymouth/themes/my-theme</code></p></li>
+<li><p>set it as default boot splash theme
+<code>sudo ln -sf /lib/plymouth/themes/my-theme/my-theme.plymouth /etc/alternatives/default.plymouth</code></p></li>
+</ul>
+
+<p>In order to get back to the system default theme:
+<code>sudo update-alternatives --config default.plymouth</code> and select the default theme you want, then <code>sudo update-initramfs -u</code></p>
+
+<h2>
+<a id="previewing-the-theme" class="anchor" href="#previewing-the-theme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Previewing the theme</h2>
+
+<p>Simply run the <strong>preview.sh</strong> file. It will install <strong>plymouth-x11</strong> if required. Then follow the instructions.</p>
+
+<h4>
+<a id="current-preview" class="anchor" href="#current-preview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current Preview</h4>
+
+<p><img src="http://imgur.com/pyqrmvO.png" alt=""></p>
+
+<h4>
+<a id="animated-preview" class="anchor" href="#animated-preview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Animated Preview</h4>
+
+<p><a href="http://gph.is/1IzkUZI">animated preview nsa-plymouth</a></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LICENSE</h2>
+
+<p>Copyright (c) 2016 SHOBHIT
+Permission is hereby granted, free of charge, to any person obtaining copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
