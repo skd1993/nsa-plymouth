@@ -1,14 +1,14 @@
-##nsa-plymouth##
+## nsa-plymouth
 
 A cool NSA-style plymouth bootsplash for Ubuntu.
 
-##Installation Instructions##
+## Installation Instructions
 
 The theme can be easily installed by running the **install.sh** file.
 Alternatively it can be done manually too by using the following commands.
 
 
-####Manual installation####
+#### Manual installation
 
 * make a directory in plymouth directory as stated below where the theme will be stored
 `mkdir /lib/plymouth/themes/my-theme`
@@ -22,17 +22,17 @@ Alternatively it can be done manually too by using the following commands.
 In order to get back to the system default theme:
 `sudo update-alternatives --config default.plymouth` and select the default theme you want, then `sudo update-initramfs -u`
 
-##Previewing the theme##
+## Previewing the theme
 
 Simply run the **preview.sh** file. It will install **plymouth-x11** if required. Then follow the instructions.
 
-####Current Preview####
+#### Current Preview
 ![](http://imgur.com/pyqrmvO.png)
 
-####Animated Preview####
+#### Animated Preview
 [animated preview nsa-plymouth](http://gph.is/1IzkUZI)
 
-##LICENSE##
+## LICENSE
 Copyright (c) 2016 SHOBHIT
 Permission is hereby granted, free of charge, to any person obtaining copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
